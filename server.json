@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.askwatch/gsc",
+  "title": "AskWatch Google Search Console MCP",
+  "description": "Ask Google Search Console in plain language. Hosted, free, no Google Cloud project.",
+  "version": "1.0.0",
+  "websiteUrl": "https://askwatch.ai/free-tools/google-search-console-mcp",
+  "icons": [
+    {
+      "src": "https://askwatch.ai/favicon-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.askwatch.ai/gsc",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <your AskWatch key>. Free, issued when you connect Google Search Console at https://askwatch.ai/free-tools/google-search-console-mcp. The key also works as a path segment: https://mcp.askwatch.ai/gsc/<key>.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
